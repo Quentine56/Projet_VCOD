@@ -46,7 +46,7 @@ fig_box = px.box(df_USA, x='job_title', y='salary_in_usd', color='experience_lev
                     title="Salaires aux Etats-Unis par poste et expérience",
                     labels={'salary_in_usd': 'Salaire (USD)', 'job_title': 'Poste'})
 st.plotly_chart(fig_box)
-st.write("Ce graphique montre que le niveau d'expérience influence fortement la médiane salariale aux Etats-Unis.")
+st.info("Ce graphique montre que le niveau d'expérience influence fortement la médiane salariale aux Etats-Unis.")
 
 ### 4. Analyse des tendances de salaires :
 #### Salaire moyen par catégorie : en choisisant une des : ['experience_level', 'employment_type', 'job_title', 'company_location'], utilisant px.bar et st.selectbox 
