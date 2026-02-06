@@ -111,7 +111,7 @@ st.plotly_chart(fig_median)
 ### 8. Ajout de filtres dynamiques
 #Filtrer les données par salaire utilisant st.slider pour selectionner les plages 
 #votre code 
-st.subheader("🔍 Filtrage par plage de salaire")
+st.subheader("Filtrage par plage de salaire")
 min_sal, max_sal = int(df['salary_in_usd'].min()), int(df['salary_in_usd'].max())
 salaire_range = st.slider("Sélectionnez une plage de salaire (USD) :", min_sal, max_sal, (min_sal, max_sal))
 
