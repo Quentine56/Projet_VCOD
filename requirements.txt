@@ -1,9 +1,7 @@
-streamlit >= 1.35.0
-pandas 
-os
+streamlit>=1.35.0
+pandas
 numpy
 matplotlib
-matplotlib.pyplot
 seaborn
-plotly.express
-altair >= 5.0.0
+plotly
+altair>=5.0.0
