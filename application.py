@@ -14,7 +14,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 import streamlit as st
-import plotly.express as pxw
+import plotly.express as px
 
 # Chargement des données
 df = pd.read_csv("data/ds_salaries.csv")
