@@ -14,7 +14,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 import streamlit as st
-import plotly.express as px
+import plotly.express as pxw
 
 # Chargement des données
 df = pd.read_csv("data/ds_salaries.csv")
@@ -32,7 +32,7 @@ if st.checkbox("Afficher un aperçu des données"):
 #Statistique générales avec describe pandas 
 #votre code 
 st.subheader("📌 Statistiques générales")
-st.write(df.describe(), "On peut voir la dispersion des salaires (moyenne, écart-type) et les quartiles. Cela permet de repérer les différentes valeurs aberrantes ")
+st.write(df.describe(), "On peut voir la dispersion des salaires (moyenne, écart-type) et les quartiles")
 
 
 ### 3. Distribution des salaires en France par rôle et niveau d'expérience, uilisant px.box et st.plotly_chart
@@ -46,7 +46,7 @@ fig_box = px.box(df_USA, x='job_title', y='salary_in_usd', color='experience_lev
                     title="Salaires aux Etats-Unis par poste et expérience",
                     labels={'salary_in_usd': 'Salaire (USD)', 'job_title': 'Poste'})
 st.plotly_chart(fig_box)
-st.info("Ce graphique montre que le niveau d'expérience influence fortement la médiane salariale aux Etats-Unis.")
+st.write("Ce graphique montre que le niveau d'expérience influence fortement la médiane salariale aux Etats-Unis.")
 
 ### 4. Analyse des tendances de salaires :
 #### Salaire moyen par catégorie : en choisisant une des : ['experience_level', 'employment_type', 'job_title', 'company_location'], utilisant px.bar et st.selectbox 
