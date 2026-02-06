@@ -26,7 +26,7 @@ st.title("📊 Visualisation des Salaires en Data Science")
 st.markdown("Explorez les tendances des salaires à travers différentes visualisations interactives.")
 
 if st.checkbox("Afficher un aperçu des données"):
-    st.write(df.head(10))
+    st.write(df)
     st.info(f"Le dataset contient {df.shape[0]} lignes et {df.shape[1]} colonnes.")
 
 #Statistique générales avec describe pandas 
